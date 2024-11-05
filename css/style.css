@@ -5,6 +5,7 @@
     --baby-gray: #F7F7F7;
     --main-font: "Poppins", sans-serif;
     --secondary-font: "Montserrat", sans-serif;
+    
 }
 
 .main-color {
@@ -51,5 +52,272 @@
     top: 35%;
     z-index: -1;
 }
+i {
+    color: white;
+}
+a{
+    text-decoration: none !important;
+}
+
 
 /* --------------------------------------------general---------------------------------------------- */
+nav .navbar-brand {
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 3.75rem;
+    color: #1c1c1c;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/imgs/bg.jpg);
+    background-size: cover;
+    background-position: top;
+
+}
+
+
+header .info h5 {
+    font-weight: 800;
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+}
+
+header .info p {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 100;
+}
+
+header .info p::after {
+    content: '';
+    animation: text-typing 10s infinite alternate;
+    font-weight: 400;
+}
+
+@keyframes text-typing {
+
+    /* Typing "Larry Daniels" */
+    0% {
+        content: '|';
+    }
+
+    2% {
+        content: 'L|';
+    }
+
+    4% {
+        content: 'La|';
+    }
+
+    6% {
+        content: 'Lar|';
+    }
+
+    8% {
+        content: 'Larr|';
+    }
+
+    10% {
+        content: 'Larry|';
+    }
+
+    12% {
+        content: 'Larry |';
+    }
+
+    14% {
+        content: 'Larry D|';
+    }
+
+    16% {
+        content: 'Larry Da|';
+    }
+
+    18% {
+        content: 'Larry Dan|';
+    }
+
+    20% {
+        content: 'Larry Dani|';
+    }
+
+    22% {
+        content: 'Larry Danie|';
+    }
+
+    24% {
+        content: 'Larry Daniel|';
+    }
+
+    26% {
+        content: 'Larry Daniels|';
+    }
+
+    /* Fast Deleting "Larry Daniels" */
+    28% {
+        content: 'Larry Daniel|';
+    }
+
+    30% {
+        content: 'Larry Danie|';
+    }
+
+    32% {
+        content: 'Larry Dani|';
+    }
+
+    34% {
+        content: 'Larry Dan|';
+    }
+
+    36% {
+        content: 'Larry Da|';
+    }
+
+    38% {
+        content: 'Larry D|';
+    }
+
+    40% {
+        content: '|';
+    }
+
+    /* Typing "Developer" */
+    42% {
+        content: 'D|';
+    }
+
+    44% {
+        content: 'De|';
+    }
+
+    46% {
+        content: 'Dev|';
+    }
+
+    48% {
+        content: 'Deve|';
+    }
+
+    50% {
+        content: 'Devel|';
+    }
+
+    52% {
+        content: 'Develo|';
+    }
+
+    54% {
+        content: 'Develop|';
+    }
+
+    56% {
+        content: 'Developer|';
+    }
+
+    /* Fast Deleting "Developer" */
+    58% {
+        content: 'Develop|';
+    }
+
+    60% {
+        content: 'Develo|';
+    }
+
+    62% {
+        content: 'Devel|';
+    }
+
+    64% {
+        content: 'Deve|';
+    }
+
+    66% {
+        content: 'Dev|';
+    }
+
+    68% {
+        content: 'De|';
+    }
+
+    70% {
+        content: 'D|';
+    }
+
+    72% {
+        content: '|';
+    }
+
+    /* Typing "Designer" */
+    74% {
+        content: 'D|';
+    }
+
+    76% {
+        content: 'De|';
+    }
+
+    78% {
+        content: 'Des|';
+    }
+
+    80% {
+        content: 'Desi|';
+    }
+
+    82% {
+        content: 'Desig|';
+    }
+
+    84% {
+        content: 'Design|';
+    }
+
+    86% {
+        content: 'Designer|';
+    }
+
+    /* Fast Deleting "Designer" */
+    88% {
+        content: 'Design|';
+    }
+
+    90% {
+        content: 'Desig|';
+    }
+
+    92% {
+        content: 'Desi|';
+    }
+
+    94% {
+        content: 'Des|';
+    }
+
+    96% {
+        content: 'De|';
+    }
+
+    98% {
+        content: 'D|';
+    }
+
+    100% {
+        content: '|';
+    }
+}
+
+header .social-icons i{
+    font-size: .80rem;
+    display: inline;
+    padding: .75rem;
+    background-color: rgba(0, 0, 0,.2);
+    border-radius: 100%;
+}
