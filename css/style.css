@@ -1,0 +1,55 @@
+/* --------------------------------------------general---------------------------------------------- */
+:root {
+    --main-color: #343434;
+    --custom-gray: #748182;
+    --baby-gray: #F7F7F7;
+    --main-font: "Poppins", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.baby-gray {
+    color: var(--baby-gray);
+}
+
+.custom-gray {
+    color: var(--custom-gray);
+}
+
+.main-color-bg {
+    background-color: var(--main-color);
+}
+
+.main-font {
+    font-family: var(--main-font);
+}
+
+.secondary-font {
+    font-family: var(--secondary-font);
+}
+
+.title h3 {
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    color: var(--main-color);
+    font-size: rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline;
+}
+
+.title h3::after {
+    content: '';
+    background-image: url(/imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    z-index: -1;
+}
+
+/* --------------------------------------------general---------------------------------------------- */
