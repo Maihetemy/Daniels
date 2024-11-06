@@ -26,8 +26,8 @@
 
 .baby-gray-color-bg {
     background-color: var(--baby-gray);
-    position: relative;
-    z-index: -2;
+    /* position: relative;
+    z-index: -2; */
 
 }
 
@@ -47,6 +47,7 @@
     line-height: 2.75rem;
     position: relative;
     display: inline;
+    /* z-index: 5; */
 }
 
 .title h3::after {
@@ -88,7 +89,6 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/imgs/bg.jpg);
     background-size: cover;
     background-position: top;
-
 }
 
 
@@ -422,22 +422,45 @@ header .social-icons i {
 
 /* --------------------------------------------Services---------------------------------------------- */
 
-#Services .service-container i {
+#Services .service-container i{
     padding: 1.25rem;
     border-radius: 100%;
     background-color: var(--baby-gray);
     color: var(--main-color);
     font-size: 1.5rem;
     transition: .5s;
+
 }
 
 
-#Services .service-container i:hover {
+#Services .service-container i:hover{
     background-color: var(--main-color);
     color: white;
-
+    
 }
 
 #Services .service-container .inner-layer {
-    box-shadow: 0 0 7rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* --------------------------------------------counters---------------------------------------------- */ */
+
+.counters i{
+    padding: 1.25rem;
+    color: var(--main-color) !important;
+    font-size: 2rem;
+    background-color: var(--main-color);
+}
+.counters p{
+    padding: 1rem;
+    color: var(--main-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.counters span{
+    padding: 1rem;
+    color: var(--custom-gray);
+    font-weight: 600;
+    line-height: 1.5rem;
 }
