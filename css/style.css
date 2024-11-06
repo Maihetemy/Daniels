@@ -24,6 +24,13 @@
     background-color: var(--main-color);
 }
 
+.baby-gray-color-bg {
+    background-color: var(--baby-gray);
+    position: relative;
+    z-index: -2;
+
+}
+
 .main-font {
     font-family: var(--main-font);
 }
@@ -36,7 +43,7 @@
     font-family: var(--secondary-font);
     font-weight: 900;
     color: var(--main-color);
-    font-size: rem;
+    font-size: 2.5rem;
     line-height: 2.75rem;
     position: relative;
     display: inline;
@@ -92,7 +99,8 @@ header .info h5 {
 }
 
 header .info p {
-    font-size: 2rem;
+    margin: 2.5rem 0;
+    font-size: 3.5rem;
     line-height: 2.25rem;
     font-weight: 100;
 }
@@ -410,4 +418,26 @@ header .social-icons i {
 .download-button:hover {
     background-color: white;
     color: var(--main-color);
+}
+
+/* --------------------------------------------Services---------------------------------------------- */
+
+#Services .service-container i {
+    padding: 1.25rem;
+    border-radius: 100%;
+    background-color: var(--baby-gray);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+
+#Services .service-container i:hover {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+#Services .service-container .inner-layer {
+    box-shadow: 0 0 7rem rgba(0, 0, 0, 0.1);
 }
