@@ -387,6 +387,7 @@ header .social-icons i {
 }
 
 .custom-progress-bar {
+    width: 0%;
     padding: .5rem;
     border-radius: .25rem;
     display: flex;
@@ -398,6 +399,14 @@ header .social-icons i {
     font-family: var(--secondary-font);
     font-size: .75rem;
 }
+.custom-progress-bar{
+    animation: width-animation 1s;
+}
+
+@keyframes width-animation {
+    0%   {width: 0% ;}
+    100% {right: 100%;}
+  }
 
 .download-button,
 .contact-button {
