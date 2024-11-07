@@ -9,34 +9,32 @@
 }
 
 .main-color {
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .baby-gray {
-    color: var(--baby-gray);
+    color: var(--baby-gray) !important;
 }
 
 .custom-gray {
-    color: var(--custom-gray);
+    color: var(--custom-gray) !important;
 }
 
 .main-color-bg {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 
 .baby-gray-color-bg {
-    background-color: var(--baby-gray);
-    /* position: relative;
-    z-index: -2; */
+    background-color: var(--baby-gray) !important;
 
 }
 
 .main-font {
-    font-family: var(--main-font);
+    font-family: var(--main-font) !important;
 }
 
 .secondary-font {
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font) !important;
 }
 
 .title h3 {
@@ -422,7 +420,7 @@ header .social-icons i {
 
 /* --------------------------------------------Services---------------------------------------------- */
 
-#Services .service-container i{
+#Services .service-container i {
     padding: 1.25rem;
     border-radius: 100%;
     background-color: var(--baby-gray);
@@ -433,10 +431,10 @@ header .social-icons i {
 }
 
 
-#Services .service-container i:hover{
+#Services .service-container i:hover {
     background-color: var(--main-color);
     color: white;
-    
+
 }
 
 #Services .service-container .inner-layer {
@@ -444,23 +442,73 @@ header .social-icons i {
 }
 
 
-/* --------------------------------------------counters---------------------------------------------- */ */
+/* --------------------------------------------counters---------------------------------------------- */
 
-.counters i{
+.counters i {
     padding: 1.25rem;
     color: var(--main-color) !important;
     font-size: 2rem;
     background-color: var(--main-color);
 }
-.counters p{
+
+.counters p {
     padding: 1rem;
     color: var(--main-color);
     font-size: 2.25rem;
     font-weight: 800;
 }
-.counters span{
+
+.counters span {
     padding: 1rem;
     color: var(--custom-gray);
     font-weight: 600;
     line-height: 1.5rem;
+}
+
+/* --------------------------------------------counters---------------------------------------------- */
+
+.image {
+    position: relative;
+}
+
+.transparent-layer {
+    padding: 5px;
+    position: absolute;
+    top: 0%;
+    background-color: transparent;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.image:hover .transparent-layer {
+    /* top: 0%; */
+    opacity: 1;
+}
+
+.item-layout {
+    background-color: rgba(255, 255, 255, .8);
+    
+}
+
+.item-layout h6 {
+    font-weight: 700;
+    font-size: .75rem;
+    color: var(--main-color);
+    font-family: var(--secondary-font);
+    line-height: .75rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+}
+
+.item-layout .image-icons i {
+    background-color: var(--main-color);
+    padding: .5rem;
+    border-radius: 100%;
+    border: 1px var(--main-color) solid;
+
+}
+.item-layout .image-icons i:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px var(--main-color) solid;
 }
