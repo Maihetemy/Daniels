@@ -467,9 +467,10 @@ header .social-icons i {
 
 /* --------------------------------------------portfolio---------------------------------------------- */
 
-.portfolio .nav-tabs{
+.portfolio .nav-tabs {
     border: none;
 }
+
 .portfolio .nav-tabs .nav-link {
     border: none;
     color: var(--main-color);
@@ -532,4 +533,31 @@ header .social-icons i {
     background-color: white;
     color: var(--main-color);
     border: 1px var(--main-color) solid;
+}
+
+
+
+/* --------------------------------------------testimonials---------------------------------------------- */
+
+.testimonials .author-img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonials .carousel-indicators {
+    position: relative;
+}
+
+.testimonials .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: lightgray;
+}
+
+.testimonials .carousel-indicators .active {
+    background-color: var(--custom-gray);
+    /* margin-left: .5rem;
+    margin-right: .5rem;
+*/
 }
