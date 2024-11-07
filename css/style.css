@@ -559,8 +559,17 @@ header .social-icons i {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
+    z-index: 1031;
     cursor: pointer;
+}
+.Overlay-example{
+   position: relative;
+}
+.Overlay-example i{
+   font-size: 2rem;
+   position: absolute;
+   right: 0;
+   
 }
 
 /* --------------------------------------------testimonials---------------------------------------------- */
