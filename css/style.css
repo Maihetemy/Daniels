@@ -582,7 +582,7 @@ header .social-icons i {
     transition: all 0.4s ease 0s;
 }
 
-.our-team .card .image:hover img{
+.our-team .card .image:hover img {
     transform: scale(1.2);
 }
 
@@ -590,17 +590,56 @@ header .social-icons i {
     position: absolute;
     background-color: #1C1C1C;
     transition: all .5s;
-    transform: rotateY(0deg) , scale(.5, .5);
+    transform: rotateY(0deg), scale(.5, .5);
     opacity: 0;
-   
+
 
 }
 
-.our-team .card .image:hover .white-layer{
+.our-team .card .image:hover .white-layer {
     transform: rotateY(180deg), scale(1, 1);
     opacity: 1;
 }
 
 .our-team .card-body {
     background-color: #5B5B5B;
+}
+
+/* --------------------------------------------contact--------------------------------------------- */
+
+.contact-us .inner-layer i {
+    padding: 1.25rem;
+    border-radius: 100%;
+    background-color: var(--baby-gray);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    transition: .5s;
+
+}
+
+
+.contact-us .inner-layer i:hover {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.contact-us .inner-layer .inner-layer {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-us .contact-button {
+    border: 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: .5rem;
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    padding: .5rem 1.5rem;
+    transition: .25s;
+}
+
+.contact-us .contact-button:hover {
+    background-color: white;
+    color: var(--main-color);
 }
