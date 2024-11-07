@@ -399,14 +399,20 @@ header .social-icons i {
     font-family: var(--secondary-font);
     font-size: .75rem;
 }
-.custom-progress-bar{
+
+.custom-progress-bar {
     animation: width-animation 1s;
 }
 
 @keyframes width-animation {
-    0%   {width: 0% ;}
-    100% {right: 100%;}
-  }
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
 
 .download-button,
 .contact-button {
@@ -571,14 +577,16 @@ header .social-icons i {
     z-index: 1031;
     cursor: pointer;
 }
-.Overlay-example{
-   position: relative;
+
+.Overlay-example {
+    position: relative;
 }
-.Overlay-example i{
-   font-size: 2rem;
-   position: absolute;
-   right: 0;
-   
+
+.Overlay-example i {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+
 }
 
 /* --------------------------------------------testimonials---------------------------------------------- */
