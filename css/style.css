@@ -465,7 +465,27 @@ header .social-icons i {
     line-height: 1.5rem;
 }
 
-/* --------------------------------------------counters---------------------------------------------- */
+/* --------------------------------------------portfolio---------------------------------------------- */
+
+.portfolio .nav-tabs{
+    border: none;
+}
+.portfolio .nav-tabs .nav-link {
+    border: none;
+    color: var(--main-color);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.portfolio .nav-tabs .nav-link:hover,
+.portfolio .nav-tabs .nav-link.active {
+    border-bottom: #1C1C1C solid 2px;
+}
+
+.portfolio .nav-tabs .nav-link:active {
+    border-bottom: #1C1C1C solid 2px;
+}
+
 
 .image {
     position: relative;
@@ -487,7 +507,7 @@ header .social-icons i {
 
 .item-layout {
     background-color: rgba(255, 255, 255, .8);
-    
+
 }
 
 .item-layout h6 {
@@ -507,6 +527,7 @@ header .social-icons i {
     border: 1px var(--main-color) solid;
 
 }
+
 .item-layout .image-icons i:hover {
     background-color: white;
     color: var(--main-color);
