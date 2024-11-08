@@ -449,12 +449,12 @@ header .social-icons i {
     background-color: var(--baby-gray);
     color: var(--main-color);
     font-size: 1.5rem;
-    transition: .5s;
+    transition: 1s;
 
 }
 
 
-#Services .service-container i:hover {
+#Services .service-container:hover i{
     background-color: var(--main-color);
     color: white;
 
