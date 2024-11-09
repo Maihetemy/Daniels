@@ -76,7 +76,16 @@ a {
 }
 
 
+.navbar-bg {
+    background-color: white !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
 /* --------------------------------------------nav---------------------------------------------- */
+nav {
+    background-color: transparent;
+}
+
 nav .navbar-brand {
     font-weight: 800;
     font-size: 1.25rem;
