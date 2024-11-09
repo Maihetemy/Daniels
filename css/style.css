@@ -562,10 +562,11 @@ header .social-icons i {
     border: 1px var(--main-color) solid;
 }
 
+/* --------------------------------------------overlay---------------------------------------------- */
 
 #overlay {
-    position: fixed;
     display: none;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -575,17 +576,15 @@ header .social-icons i {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1031;
     cursor: pointer;
+
 }
 
 .Overlay-example {
     position: relative;
-}
-
-.Overlay-example i {
-    font-size: 2rem;
-    position: absolute;
-    right: 0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* --------------------------------------------testimonials---------------------------------------------- */
