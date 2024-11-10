@@ -603,22 +603,22 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <i class="fa-solid fa-user-group"></i>
-                <p>850</p>
+                <p id="num1"></p>
                 <span>Happy Customers</span>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <i class="fa-solid fa-thumbs-up"></i>
-                <p>230</p>
+                <p id="num2"></p>
                 <span>Complete Projects</span>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <i class="fa-solid fa-bullhorn"></i>
-                <p>9450</p>
+                <p id="num3"></p>
                 <span>Lines Of Code</span>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <i class="fa-solid fa-cloud-arrow-down"></i>
-                <p>780</p>
+                <p id="num4"></p>
                 <span>Files Downloaded</span>
             </div>
         </div>
@@ -763,32 +763,7 @@
     </footer>
 
     <!-- ----------------------------------js---------------------------------------------- -->
-    <script>
-
-        // overlay
-        function on() {
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-            document.getElementById("overlay").style.display = "none";
-            console.log('off');
-        }
-
-        // navbar transformation
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbar = document.querySelector('#navbar');
-
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 500) {
-                    navbar.classList.add('navbar-bg');
-                } else {
-                    navbar.classList.remove('navbar-bg');
-                }
-            });
-        });
-    </script>
-
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
 
