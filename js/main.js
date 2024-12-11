@@ -1,3 +1,13 @@
+// loading
+window.addEventListener('load', function () {
+    const loaderOverlay = document.querySelector('.loader-overlay');
+    if (loaderOverlay) {
+        loaderOverlay.style.display = 'none';
+    }
+});
+
+
+
 // overlay
 function on() {
     document.getElementById("overlay").style.display = "block";
@@ -19,15 +29,13 @@ window.addEventListener('scroll', function () {
         navbar.classList.add('navbar-bg');
         navBrand.classList.replace('text-white', 'main-color');
         navItems.forEach(navItem => {
-            navItem.classList.remove('text-white');
-            navItem.classList.add('text-black');
+            navItem.classList.replace('text-white', 'main-color');
         });
     } else {
         navbar.classList.remove('navbar-bg');
         navBrand.classList.replace('main-color', 'text-white');
         navItems.forEach(navItem => {
-            navItem.classList.remove('text-black');
-            navItem.classList.add('text-white');
+            navItem.classList.replace('main-color', 'text-white');
         });
     }
 });
