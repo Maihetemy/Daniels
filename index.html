@@ -30,8 +30,9 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <!-- ----------------------------------loader---------------------------------------------- -->
-
-
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
 
     <!-- ----------------------------------nav---------------------------------------------- -->
 
@@ -506,7 +507,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <i class="fa-solid fa-xmark" onclick="closeOverlay();"></i>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
@@ -518,6 +519,7 @@
                     <span class="">Next</span>
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
+                
             </div>
             <!-- <p" class="bg-danger">Lorem ipsum dolor sit, amet consectetur adipisicing
                 elit. Minus, a praesentium. Fugit culpa, esse debitis
@@ -765,9 +767,7 @@
     <footer class="main-color-bg custom-gray text-center py-1" style="font-size: 1rem;">
         <p class="m-0 py-4">Copy Right 2018 © By Daniels All Rights Reserved</p>
     </footer>
-    <div class="loader-overlay">
-        <div class="loader"></div>
-    </div>
+
     <!-- ----------------------------------js---------------------------------------------- -->
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

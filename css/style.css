@@ -639,7 +639,11 @@ header .social-icons i {
     align-items: center;
     height: 100%;
 }
-
+#overlay .fa-xmark{
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
 /* --------------------------------------------testimonials---------------------------------------------- */
 
 .testimonials .author-img {

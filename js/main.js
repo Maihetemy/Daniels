@@ -55,6 +55,10 @@ function updateElement(targetNumber, ele) {
     update();
 }
 
+function closeOverlay(){
+    document.getElementById("overlay").style.display = "none";
+}
+
 // counters
 var ele1 = document.getElementById("num1");
 updateElement(850, ele1);
