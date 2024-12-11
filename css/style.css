@@ -81,21 +81,26 @@ a {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
 }
 
+.navbar-color{
+    color: white !important;
+}
+
 /* --------------------------------------------nav---------------------------------------------- */
 nav {
     background-color: transparent;
+    transition: all .5s;
 }
 
 nav .navbar-brand {
     font-weight: 800;
     font-size: 1.25rem;
     line-height: 3.75rem;
-    color: var(--main-color);
     font-family: var(--secondary-font);
     text-transform: uppercase;
     letter-spacing: .05rem;
     padding: 0;
 }
+
 
 /* --------------------------------------------header---------------------------------------------- */
 

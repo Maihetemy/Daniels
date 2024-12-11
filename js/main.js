@@ -1,5 +1,5 @@
- // overlay
- function on() {
+// overlay
+function on() {
     document.getElementById("overlay").style.display = "block";
 }
 
@@ -9,16 +9,27 @@ function off() {
 }
 
 // navbar transformation
-document.addEventListener('DOMContentLoaded', function () {
-    var navbar = document.querySelector('#navbar');
 
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 500) {
-            navbar.classList.add('navbar-bg');
-        } else {
-            navbar.classList.remove('navbar-bg');
-        }
-    });
+var navbar = document.querySelector('#navbar');
+var navBrand = document.querySelector('nav .navbar-brand');
+var navItems = document.querySelectorAll('.navbar-expand-lg .navbar-nav .nav-link');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+        navbar.classList.add('navbar-bg');
+        navBrand.classList.replace('text-white', 'main-color');
+        navItems.forEach(navItem => {
+            navItem.classList.remove('text-white');
+            navItem.classList.add('text-black');
+        });
+    } else {
+        navbar.classList.remove('navbar-bg');
+        navBrand.classList.replace('main-color', 'text-white');
+        navItems.forEach(navItem => {
+            navItem.classList.remove('text-black');
+            navItem.classList.add('text-white');
+        });
+    }
 });
 
 
