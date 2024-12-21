@@ -34,18 +34,20 @@ function off() {
 
 var navbar = document.querySelector('#navbar');
 var navBrand = document.querySelector('nav .navbar-brand');
-var navbarToggler = document.querySelector('.navbar-toggler-icon');
+var navbarToggler = document.querySelector('.navbar-toggler');
 var navItems = document.querySelectorAll('.navbar-expand-lg .navbar-nav .nav-link');
 
 window.addEventListener('scroll', function () {
     if (window.scrollY > 500) {
         navbar.classList.add('navbar-bg');
+        navbarToggler.classList.replace('navbar-dark' , 'navbar-light');
         navBrand.classList.replace('text-white', 'main-color');
         navItems.forEach(navItem => {
             navItem.classList.replace('text-white', 'main-color');
         });
     } else {
         navbar.classList.remove('navbar-bg');
+        navbarToggler.classList.replace('navbar-light' , 'navbar-dark');
         navBrand.classList.replace('main-color', 'text-white');
         navItems.forEach(navItem => {
             navItem.classList.replace('main-color', 'text-white');
