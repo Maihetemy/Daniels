@@ -1,9 +1,21 @@
 // loading
 window.addEventListener('load', function () {
-    const loaderOverlay = document.querySelector('.loader-overlay');
-    if (loaderOverlay) {
-        loaderOverlay.style.display = 'none';
+    const loaderOverlay1 = document.querySelector('.loader-overlay1');
+    const loaderOverlay2 = document.querySelector('.loader-overlay2');
+    const loader = document.querySelector('.loader');
+    const loaderScreen = document.querySelector('.loader-screen');
+
+    console.log(loaderOverlay1, loaderOverlay2);
+    
+    if (loaderOverlay1 && loaderOverlay2 && loader) {
+        loader.classList.add('hide'); 
+        loaderOverlay1.classList.add('hide'); 
+        loaderOverlay2.classList.add('hide'); 
     }
+    setTimeout(() => {
+        loaderScreen.classList.add('d-none'); 
+    }, 900);
+    
 });
 
 
@@ -22,6 +34,7 @@ function off() {
 
 var navbar = document.querySelector('#navbar');
 var navBrand = document.querySelector('nav .navbar-brand');
+var navbarToggler = document.querySelector('.navbar-toggler-icon');
 var navItems = document.querySelectorAll('.navbar-expand-lg .navbar-nav .nav-link');
 
 window.addEventListener('scroll', function () {
@@ -55,7 +68,7 @@ function updateElement(targetNumber, ele) {
     update();
 }
 
-function closeOverlay(){
+function closeOverlay() {
     document.getElementById("overlay").style.display = "none";
 }
 
